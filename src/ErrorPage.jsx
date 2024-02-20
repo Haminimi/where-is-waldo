@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import sound from '../utility/sound';
-import buttonSound from './assets/button-sound.wav';
+import buttonSound from './assets/sounds/button-sound.wav';
 
 function ErrorPage({ error }) {
 	return (

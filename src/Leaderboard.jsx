@@ -3,7 +3,7 @@ import ErrorPage from './ErrorPage.jsx';
 import Loading from './Loading.jsx';
 import capitalize from '../utility/capitalize';
 import sound from '../utility/sound';
-import buttonSound from './assets/button-sound.wav';
+import buttonSound from './assets/sounds/button-sound.wav';
 import { v4 as uuidv4 } from 'uuid';
 
 function Leaderboard() {
@@ -80,7 +80,7 @@ function Leaderboard() {
 								<p className="leaderboardScoreIndex">
 									{`${leaderboard.indexOf(score) + 1}.`}
 								</p>
-								<p>
+								<p className="leaderboardScoreGame">
 									<b>{capitalize(score.image)}</b>
 								</p>
 								<p className="score">

@@ -5,7 +5,7 @@ import Home from './Home';
 import Game from './Game';
 import Leaderboard from './Leaderboard';
 import Footer from './Footer';
-import backgroundMusic from './assets/background-music.mp3';
+import backgroundMusic from './assets/sounds/background-music.mp3';
 
 function App() {
 	const [currentImage, setCurrentImage] = useState('beach');
