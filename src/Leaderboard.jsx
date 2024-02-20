@@ -4,6 +4,7 @@ import Loading from './Loading.jsx';
 import capitalize from '../utility/capitalize';
 import sound from '../utility/sound';
 import buttonSound from './assets/button-sound.wav';
+import { v4 as uuidv4 } from 'uuid';
 
 function Leaderboard() {
 	const [leaderboard, setLeaderboard] = useState([]);
@@ -47,13 +48,13 @@ function Leaderboard() {
 		fetchData();
 	}
 
-	if (error) return <ErrorPage />;
+	if (error) return <ErrorPage error={error} />;
 	if (loading) return <Loading />;
 
 	return (
 		<>
 			<div className="leaderboardContainer">
-				<h1>Leaderboard</h1>
+				<h1 className="leaderboardHeader">Leaderboard</h1>
 				<nav className="leaderboardCriteria">
 					<button
 						onClick={() => {
@@ -71,28 +72,25 @@ function Leaderboard() {
 					<button onClick={() => retrieveScores('factory')}>
 						Factory
 					</button>
-					<button onClick={() => retrieveScores('station')}>
-						Station
-					</button>
 				</nav>
 				<div className="leaderboardScores">
 					{leaderboard.length > 0 &&
 						leaderboard.map((score) => (
-							<div
-								key={`${score.image}_${score.user}_${score.score}`}
-								className="leaderboardScore"
-							>
-								<p>
-									Game: <b>{capitalize(score.image)}</b>
+							<div key={uuidv4()} className="leaderboardScore">
+								<p className="leaderboardScoreIndex">
+									{`${leaderboard.indexOf(score) + 1}.`}
 								</p>
 								<p>
+									<b>{capitalize(score.image)}</b>
+								</p>
+								<p className="score">
 									@{`${score.user}`}:{' '}
 									<b>{`${score.score}`}s</b>
 								</p>
 							</div>
 						))}
 					{leaderboard.length < 1 && (
-						<p>There are no scores for this game.</p>
+						<h2>There are no scores for this game.</h2>
 					)}
 				</div>
 			</div>
