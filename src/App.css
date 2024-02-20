@@ -197,3 +197,43 @@ form {
 .submitButton {
 	color: crimson;
 }
+
+.leaderboardContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	min-height: 80vh;
+	padding: 10px;
+	color: crimson;
+}
+
+.leaderboardCriteria {
+	display: flex;
+	gap: 10px;
+}
+
+.leaderboardScores {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.leaderboardScore {
+	width: 350px;
+	position: relative;
+	padding: 10px 15px;
+	font-family: 'Fredoka', sans-serif;
+	font-size: 22px;
+	border: 5px solid #f52549;
+	border-radius: 5px;
+	background-color: crimson;
+	color: white;
+}
+
+.leaderboardScoreIndex {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
