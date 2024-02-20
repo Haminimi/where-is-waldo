@@ -237,3 +237,17 @@ form {
 	top: 5px;
 	left: 10px;
 }
+
+.errorPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	min-height: 80vh;
+}
+
+.errorHomeButton {
+	background-color: #f52549;
+	color: white;
+}
