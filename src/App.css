@@ -313,3 +313,12 @@ form {
 		transform: scaleY(1);
 	}
 }
+
+.gitHubLinkContainer {
+	padding: 10px;
+}
+
+.devicon-github-original {
+	font-size: 35px;
+	color: #f52549;
+}
