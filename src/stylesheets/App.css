@@ -84,6 +84,7 @@ header {
 .imageContainer {
 	display: inline-block;
 	position: relative;
+	width: 85%;
 }
 
 .gameImage {
