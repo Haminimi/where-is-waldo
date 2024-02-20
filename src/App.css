@@ -1,0 +1,33 @@
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 20vh;
+	padding: 0px 20px;
+	font-size: 22px;
+}
+
+.headerImage {
+	width: 300px;
+	position: absolute;
+	top: -10px;
+	left: 0px;
+}
+
+.headerNav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.activeLink,
+.inactiveLink {
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.activeLink {
+	background-color: #f52549;
+	color: white;
+}
