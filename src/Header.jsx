@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import waldo from './assets/images/waldo.webp';
 import sound from '../utility/sound';
 import buttonSound from './assets/sounds/button-sound.wav';
@@ -49,5 +50,11 @@ function Header({ currentPath, music, setMusic }) {
 		</>
 	);
 }
+
+Header.propTypes = {
+	currentPath: PropTypes.string.isRequired,
+	music: PropTypes.string.isRequired,
+	setMusic: PropTypes.func.isRequired,
+};
 
 export default Header;

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import sound from '../utility/sound';
 import buttonSound from './assets/sounds/button-sound.wav';
 
@@ -17,5 +18,9 @@ function ErrorPage({ error }) {
 		</div>
 	);
 }
+
+ErrorPage.propTypes = {
+	error: PropTypes.object,
+};
 
 export default ErrorPage;

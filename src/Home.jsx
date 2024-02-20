@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import beach from './assets/images/waldo-beach.avif';
 import downtown from './assets/images/waldo-downtown.png';
 import factory from './assets/images/waldo-factory.webp';
@@ -46,5 +47,9 @@ function Home({ setCurrentImage }) {
 		</>
 	);
 }
+
+Home.propTypes = {
+	setCurrentImage: PropTypes.func.isRequired,
+};
 
 export default Home;
