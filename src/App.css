@@ -76,3 +76,65 @@ header {
 .gameCard :hover {
 	filter: drop-shadow(0 0 0.2em #f52549);
 }
+
+.gameContainer {
+	padding: 30px;
+}
+
+.imageContainer {
+	display: inline-block;
+	position: relative;
+}
+
+.gameImage {
+	border-radius: 10px;
+}
+
+.targetingBoxContainer {
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	width: 60px;
+	z-index: 10;
+}
+
+.targetingBox {
+	width: 60px;
+	height: 60px;
+	border: 3px solid crimson;
+	border-radius: 5px;
+}
+
+.characters {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color: crimson;
+}
+
+.characters > button {
+	width: 100%;
+	padding: 0.2em 1.2em;
+	border: 2px solid white;
+	background-color: crimson;
+	color: white;
+}
+
+.characters > button:hover {
+	border-color: crimson;
+	background-color: white;
+	color: crimson;
+}
+
+.foundCharacterCircle {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	border: 5px solid mediumseagreen;
+	border-radius: 50px;
+}
