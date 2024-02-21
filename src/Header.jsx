@@ -5,6 +5,20 @@ import sound from '../utility/sound';
 import buttonSound from './assets/sounds/button-sound.wav';
 
 function Header({ currentPath, music, setMusic }) {
+	function switchMusicWithKeyboard(event, action) {
+		if (
+			event.key === 'Enter' ||
+			event.key === ' ' ||
+			event.key === 'Spacebar'
+		) {
+			if (action === 'off') {
+				setMusic('off');
+			} else {
+				setMusic('on');
+			}
+		}
+	}
+
 	return (
 		<>
 			<header>
@@ -34,6 +48,9 @@ function Header({ currentPath, music, setMusic }) {
 						<span
 							className="material-symbols-outlined noteIcon"
 							onClick={() => setMusic('off')}
+							onKeyDown={(e) => switchMusicWithKeyboard(e, 'off')}
+							aria-label="Turn music off"
+							tabIndex={0}
 						>
 							music_note
 						</span>
@@ -41,6 +58,9 @@ function Header({ currentPath, music, setMusic }) {
 						<span
 							className="material-symbols-outlined noteIcon"
 							onClick={() => setMusic('on')}
+							onKeyDown={(e) => switchMusicWithKeyboard(e, 'on')}
+							aria-label="Turn music on"
+							tabIndex={0}
 						>
 							music_off
 						</span>
