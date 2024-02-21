@@ -2,7 +2,7 @@
 ## Description
 [Where's Wally?](https://en.wikipedia.org/wiki/Where%27s_Wally%3F) (called Where's Waldo? in Canada and the USA) is a British series of children's puzzle books created by English illustrator [Martin Handford](https://en.wikipedia.org/wiki/Martin_Handford). Readers are challenged to find a character named Wally and his friends hidden throughout the pages. [The project](https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s Node course within [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview and Backend
-You can check out [the game here](), and [the backend code here](https://github.com/Haminimi/where-is-waldo-backend).
+You can check out [the game here](https://where-is-waldo-rouge.vercel.app/), and [the backend code here](https://github.com/Haminimi/where-is-waldo-backend).
 ## Main Features
 - **Jamstack**
 ## Tech
