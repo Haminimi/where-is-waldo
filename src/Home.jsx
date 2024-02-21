@@ -35,7 +35,13 @@ function Home({ setCurrentImage }) {
 												? downtown
 												: factory
 										}
-										alt={image}
+										alt={
+											image === 'beach'
+												? 'Find Waldo at a beach.'
+												: image === 'downtown'
+												? 'Find Waldo in a city.'
+												: 'Find Waldo in a factory.'
+										}
 										className="gameCardImage"
 									/>
 								</div>

@@ -228,7 +228,13 @@ function Game({ currentImage }) {
 								? downtown
 								: factory
 						}
-						alt={currentImage}
+						alt={
+							currentImage === 'beach'
+								? 'Find Waldo at a beach.'
+								: currentImage === 'downtown'
+								? 'Find Waldo in a city.'
+								: 'Find Waldo in a factory.'
+						}
 						className="gameImage"
 						onClick={handleImageClick}
 					/>
