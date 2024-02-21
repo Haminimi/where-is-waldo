@@ -18,7 +18,9 @@ function Leaderboard() {
 	function retrieveAllScores() {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:3000/scores');
+				const response = await fetch(
+					'https://haminimi-where-is-waldo.glitch.me/scores'
+				);
 				const data = await response.json();
 				setLeaderboard(data.scores);
 			} catch (error) {
@@ -36,7 +38,7 @@ function Leaderboard() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					`http://localhost:3000/scores/${game}`
+					`https://haminimi-where-is-waldo.glitch.me/scores/${game}`
 				);
 				const data = await response.json();
 				setLeaderboard(data.scores);
