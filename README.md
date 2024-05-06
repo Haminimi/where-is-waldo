@@ -22,8 +22,8 @@ You can check out [the game here](https://where-is-waldo-rouge.vercel.app/), and
 - Jamstack
 - cURL and Postman
 - Testing with Supertest
-<!-- ## Reflection
-Quality of the images... -->
+## Reflection
+I wish I could find better quality images.
 ## Credits
 - Icon used for the favicon image is one of the [Game pad icons created by Anggara - Flaticon](https://www.flaticon.com/free-icons/game-pad).
 
