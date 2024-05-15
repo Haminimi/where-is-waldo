@@ -19,7 +19,7 @@ function Leaderboard() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					'https://haminimi-where-is-waldo.glitch.me/scores'
+					`${import.meta.env.VITE_BACKEND_URL}/scores`
 				);
 				const data = await response.json();
 				setLeaderboard(data.scores);
@@ -38,7 +38,7 @@ function Leaderboard() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					`https://haminimi-where-is-waldo.glitch.me/scores/${game}`
+					`${import.meta.env.VITE_BACKEND_URL}/scores/${game}`
 				);
 				const data = await response.json();
 				setLeaderboard(data.scores);
