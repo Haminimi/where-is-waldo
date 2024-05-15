@@ -10,6 +10,7 @@ lerna-debug.log*
 archive
 .prettierignore
 node_modules
+.env
 dist-ssr
 *.local
 
