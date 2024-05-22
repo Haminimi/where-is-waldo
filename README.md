@@ -33,9 +33,4 @@ I wish I could find better quality images.
 - [Correct](https://freesound.org/people/Mellau/sounds/506052/)
 - [Wrong](https://freesound.org/people/kantouth/sounds/106727/)
 - [Win](https://freesound.org/people/LittleRobotSoundFactory/sounds/274180/)
-## Author
-- [GitHub](https://github.com/Haminimi)
-- [Exercism](https://exercism.org/profiles/Haminimi)
-- [LeetCode](https://leetcode.com/Haminimi/)
-- Email: haminimi.dev@gmail.com
 ## Happy coding!
